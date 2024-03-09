@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--<link href="src/output.css" rel="stylesheet">-->
+  <title>Reda Ridati - Web developer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
   // create a function to update the date and time
@@ -12,7 +12,7 @@
     const now = new Date();
 
     // get the current date and time as a string
-    const currentDateTime = now.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+    const currentDateTime = now.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit',second:'2-digit'});
 
     // update the `textContent` property of the `span` element with the `id` of `datetime`
     document.querySelector('#datetime').textContent = currentDateTime;
@@ -30,7 +30,7 @@
     </div>
     <div>
       <a class="mr-5 text-gray-400 hover:text-black dark:text-gray-500 dark:hover:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-500" href="#">
-        info@work.com
+        mail coming soon
       </a>
       <span id="datetime" class="text-gray-400 dark:text-gray-500"></span>
     </div>
@@ -38,19 +38,99 @@
 </header>
 <div class="grid grid-cols-12 mt-12 px-6">
   <div class="col-span-10">
-    <h5 class="text-black dark:text-white">
+    <p class="text-black dark:text-white">
       I am a seasoned full stack web developer and designer based in Milan, Italy. I deliver digital solutions that seamlessly integrate functionality with aesthetic appeal. With expertise spanning front-end development, back-end architecture, and user-centric design, I am dedicated to crafting remarkable online experiences. I leverage my comprehensive skill set to drive success across diverse projects, tailored to the specific requirements of each business, product, or brand.
-    </h5>
+    </p>
   </div>
 </div>
-<div class="grid grid-cols-12 px-6" style="margin-top: 30rem;">
+<div class="grid grid-cols-12 px-6 mt-[20rem] lg:mt-[30rem]">
   <div class="xl:col-start-4 col-span-12">
     <p class="text-black dark:text-white">
       A photo from the last conference. <span class="text-gray-400 dark:text-gray-500">July 2023</span>
     </p>
-    <img src="src/img/heroimage2.jpeg" class="object-cover" style="height: 30rem; width: 100%;">
+    <img src="src/img/heroimage3.jpg" class="object-cover grayscale" style="height: 30rem; width: 100%;">
   </div>
 </div>
-
+<div class="grid grid-cols-12 px-6 mt-8">
+  <div class="col-start-1 col-end-12 lg:col-start-4 lg:col-span-2">
+    <p class="text-black dark:text-white">
+      <span class="text-gray-400 dark:text-gray-500">Soft Skills</span><br>
+      Detail-oriented<br>
+      Calm under pressure<br>
+      Focused and determined<br>
+      Effective verbal and written communication abilities<br>
+      Creative<br>
+      Adaptable<br>
+      Teaching<br>
+      <br>
+    </p>
+  </div>
+  <div class="col-start-1 col-end-12 lg:col-start-6 lg:col-span-4">
+    <p class="text-black dark:text-white">
+      <span class="text-gray-400 dark:text-gray-500">Expertise</span><br>
+      As a full stack web developer, I bring a comprehensive skill set encompassing both front-end and back-end technologies. With proficiency in popular frameworks and languages, I am equipped to deliver dynamic and responsive web solutions.
+      <br>
+      <br>
+      <ol class="list-decimal list-inside">
+        <li>
+          Proficient in server-side programming languages such as Node.js, PHP and Python to create robust and scalable back-end systems.
+        </li>
+        <br>
+        <li>
+          Familiarity with relational (SQL) and non-relational (NoSQL) databases, including MySQL, MongoDB, and PostgreSQL, for efficient data management and storage.
+        </li>
+        <br>
+        <li>
+          Experienced with modern front-end frameworks such as React.js, Next.js, Bootstrap and Tailwind, enabling efficient development and enhanced user experiences.
+        </li>
+        <br>
+        <li>
+          Proficient in HTML5, CSS3, JavaScript and frameworks like Tailwind and Bootstrap for building interactive and visually appealing user interfaces.
+        </li>
+        <br>
+        <li>
+          Mindful of UI/UX foundations, responsive design principles and cross-platform compatibility to ensure seamless performance across various devices.
+        </li>
+      </ul>
+      <br>
+    </p>
+  </div>
+  <div class="col-start-1 col-end-12 lg:col-start-11 lg:col-span-2">
+    <p class="text-black dark:text-white">
+      <span class="text-gray-400 dark:text-gray-500">Worked with</span><br>
+      Vodafone<br>
+      Fastweb<br>
+      Apple<br>
+      Lenovo<br>
+      Castles Technologies<br>
+      Asus<br>
+      Xiaomi<br>
+      Vorwerk<br>
+      <br>
+      <span class="text-gray-400 dark:text-gray-500">Languages</span><br>
+      English <span class="text-gray-400 dark:text-gray-500">(Native proficiency)</span><br>
+      Italian <span class="text-gray-400 dark:text-gray-500">(Native proficiency)</span><br>
+      Arabic <span class="text-gray-400 dark:text-gray-500">(Heritage)</span><br>
+      Japanese <span class="text-gray-400 dark:text-gray-500">(Secondary)</span><br>
+      Spanish <span class="text-gray-400 dark:text-gray-500">(Secondary)</span><br>
+    </p>
+  </div>
+</div>
+<footer class="mt-[10rem] mb-[5rem] text-sm">
+  <div class="grid grid-cols-12 px-6">
+    <div class="col-span-6 lg:col-span-3">
+      <p class="text-gray-400 dark:text-gray-500">
+        <a href="#" class="hover:text-black dark:hover:text-white">GitHub</a><br>
+        <a href="#" class="hover:text-black dark:hover:text-white">LinkedIn</a>
+      </p>
+    </div>
+    <div class="col-span-6">
+      <p class="text-gray-400 dark:text-gray-500">
+        20139 Milano, Italy<br>
+        mail coming soon
+      </p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
