@@ -4,10 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="src/output.css" rel="stylesheet">
+  <script>
+  // create a function to update the date and time
+  function updateDateTime() {
+    // create a new `Date` object
+    const now = new Date();
+
+    // get the current date and time as a string
+    const currentDateTime = now.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+
+    // update the `textContent` property of the `span` element with the `id` of `datetime`
+    document.querySelector('#datetime').textContent = currentDateTime;
+  }
+
+  // call the `updateDateTime` function every second
+  setInterval(updateDateTime, 1000);
+</script>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="font-light dark:bg-black">
+<header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-5 dark:bg-black">
+  <nav class="w-full mx-6 flex justify-between" aria-label="Global">
+    <div>
+      <a class="hover:text-gray-400 dark:text-white" href="#">Reda Ridati</a> <span class="text-gray-400 ml-5 dark:text-gray-500">Full stack web developer</span>
+    </div>
+    <div>
+      <a class="mr-5 text-gray-400 hover:text-black dark:text-gray-500 dark:hover:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-500" href="#">
+        info@work.com
+      </a>
+      <span id="datetime" class="text-gray-400 dark:text-gray-500"></span>
+    </div>
+  </nav>
+</header>
+<div class="grid grid-cols-12 mt-12 px-6">
+  <div class="col-span-10">
+    <h5 class="text-black dark:text-white">
+      I am a seasoned full stack web developer and designer based in Milan, Italy. I deliver digital solutions that seamlessly integrate functionality with aesthetic appeal. With expertise spanning front-end development, back-end architecture, and user-centric design, I am dedicated to crafting remarkable online experiences. I leverage my comprehensive skill set to drive success across diverse projects, tailored to the specific requirements of each business, product, or brand.
+    </h5>
+  </div>
+</div>
+<div class="grid grid-cols-12 px-6" style="margin-top: 30rem;">
+  <div class="xl:col-start-4 col-span-12">
+    <p class="text-black dark:text-white">
+      A photo from the last conference. <span class="text-gray-400 dark:text-gray-500">July 2023</span>
+    </p>
+    <img src="src/img/heroimage2.jpeg" class="object-cover" style="height: 30rem; width: 100%;">
+  </div>
+</div>
+
 </body>
 </html>
