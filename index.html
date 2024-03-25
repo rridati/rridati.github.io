@@ -1,147 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reda Ridati - Web developer</title>
+  <title>Reda Ridati - Interdisciplinary Developer and Designer </title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://rsms.me/">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-  <style type="text/css">
-    body {
-      font-family: Inter, sans-serif !important;
-      font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  <style>
+    ::selection {
+        background-color: #6eaaff; /* Set the background color */
+        color: #0e70fa; /* Set the text color */
     }
-    @supports (font-variation-settings: normal) {
-      body { font-family: InterVariable, sans-serif; }
+    #wcb.wcb-d #wcb_a {
+        display: none;
+    }
+    #wcb_g {
+        color: #6eaaff !important;
+        border: none !important;
+        padding: 0 !important;
+        background-color: transparent !important;
+        transition: color 100ms;
+    }
+    #wcb_g:hover {
+        color: #fffdf9 !important;
     }
   </style>
 </head>
-<body class="font-light dark:bg-black">
-  <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-5 dark:bg-black">
-    <nav class="w-full mx-6 flex justify-between" aria-label="Global">
-      <div>
-        <a class="hover:text-gray-400 dark:text-white" href="#">Reda Ridati</a> <span class="text-gray-400 ml-2 dark:text-gray-500">Full stack dev</span>
-      </div>
-      <div>
-        <a class="mr-2 text-gray-400 hover:text-black dark:text-gray-500 dark:hover:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-500" href="#">
-          mail soon
-        </a>
-        <span id="datetime" class="text-gray-400 dark:text-gray-500"></span>
-      </div>
-    </nav>
-  </header>
-  <div class="grid grid-cols-12 mt-12 px-6">
-    <div class="col-span-10">
-      <p class="text-black dark:text-white">
-        I am a seasoned full stack web developer and designer based in Milan, Italy. I deliver digital solutions that seamlessly integrate functionality with aesthetic appeal. With expertise spanning front-end development, back-end architecture, and user-centric design, I am dedicated to crafting remarkable online experiences. I leverage my comprehensive skill set to drive success across diverse projects, tailored to the specific requirements of each business, product, or brand.
-      </p>
+<body class="bg-[#0e70fa] text-[#fffdf9]">
+    <div class="flex flex-col h-screen">
+        <div class="grid grid-cols-12 gap-4 p-[5rem]">
+            <div class="col-span-12 md:col-span-6 xl:col-span-4">
+                <p class="leading-tight text-xl subpixel-antialiased font-serif">
+                    Greetings, I'm Reda, an interdisciplinary designer and full-stack developer with a passion for creating meaningful experiences.<br><br>I'm currently busy but for any business enquiries you can send an email.
+                </p>
+                <br>
+                <a class="transition text-xl text-[#fffdf9] underline underline-offset-2 decoration-[#6eaaff] font-sanserif hover:decoration-[#fffdf9]" href="#">
+                    send email
+                </a>
+                <p class="text-[#6eaaff] text-5xl subpixel-antialiased font-serif mt-[5rem]" id="currentTime">
+                    <!--current time-->
+                </p>
+            </div>
+        </div>
+        <footer class="flex justify-end items-end flex-grow">
+            <a href="https://www.websitecarbon.com/website/rridati-github-io/" target="_blank">
+                <div id="wcb" class="carbonbadge wcb-d">
+                </div>
+            </a>
+        </footer>
     </div>
-  </div>
-  <div class="grid grid-cols-12 px-6 mt-[20rem] lg:mt-[30rem]">
-    <div class="xl:col-start-4 col-span-12">
-      <p class="text-black dark:text-white">
-        Currently busy. <span class="text-gray-400 dark:text-gray-500">Last update March 2024</span>
-      </p>
-      <img src="src/img/heroimage3.jpg" class="object-cover grayscale" style="height: 30rem; width: 100%;">
-    </div>
-  </div>
-  <div class="grid grid-cols-12 px-6 mt-8">
-    <div class="col-start-1 col-end-12 lg:col-start-4 lg:col-span-2">
-      <p class="text-black dark:text-white">
-        <span class="text-gray-400 dark:text-gray-500">Soft Skills</span><br>
-        Detail-oriented<br>
-        Calm under pressure<br>
-        Focused and determined<br>
-        Effective verbal and written communication abilities<br>
-        Creative<br>
-        Adaptable<br>
-        Teaching<br>
-        <br>
-      </p>
-    </div>
-    <div class="col-start-1 col-end-12 lg:col-start-6 lg:col-span-4">
-      <p class="text-black dark:text-white">
-        <span class="text-gray-400 dark:text-gray-500">Expertise</span><br>
-        As a full stack web developer, I bring a comprehensive skill set encompassing both front-end and back-end technologies. With proficiency in popular frameworks and languages, I am equipped to deliver dynamic and responsive web solutions.
-        <br>
-        <br>
-      </p>
-      <ol class="list-decimal list-inside text-black dark:text-white">
-        <li>
-          Proficient in server-side programming languages such as Node.js, PHP and Python to create robust and scalable back-end systems.
-        </li>
-        <br>
-        <li>
-          Familiarity with relational (SQL) and non-relational (NoSQL) databases, including MySQL, MongoDB, and PostgreSQL, for efficient data management and storage.
-        </li>
-        <br>
-        <li>
-          Experienced with modern front-end frameworks such as React.js, Next.js, Bootstrap and Tailwind, enabling efficient development and enhanced user experiences.
-        </li>
-        <br>
-        <li>
-          Proficient in HTML5, CSS3, JavaScript and frameworks like Tailwind and Bootstrap for building interactive and visually appealing user interfaces.
-        </li>
-        <br>
-        <li>
-          Mindful of UI/UX foundations, responsive design principles and cross-platform compatibility to ensure seamless performance across various devices.
-        </li>
-      </ol>
-      <br>
-    </div>
-    <div class="col-start-1 col-end-12 lg:col-start-11 lg:col-span-2">
-      <p class="text-black dark:text-white">
-        <span class="text-gray-400 dark:text-gray-500">Worked with</span><br>
-        Vodafone<br>
-        Fastweb<br>
-        Apple<br>
-        Lenovo<br>
-        Castles Technologies<br>
-        Asus<br>
-        Xiaomi<br>
-        Vorwerk<br>
-        <br>
-        <span class="text-gray-400 dark:text-gray-500">Languages</span><br>
-        English <span class="text-gray-400 dark:text-gray-500">(Native proficiency)</span><br>
-        Italian <span class="text-gray-400 dark:text-gray-500">(Native proficiency)</span><br>
-        Arabic <span class="text-gray-400 dark:text-gray-500">(Heritage)</span><br>
-        Japanese <span class="text-gray-400 dark:text-gray-500">(Secondary)</span><br>
-        Spanish <span class="text-gray-400 dark:text-gray-500">(Secondary)</span><br>
-      </p>
-    </div>
-  </div>
-  <footer class="mt-[10rem] mb-[5rem] text-sm">
-    <div class="grid grid-cols-12 px-6">
-      <div class="col-span-6 lg:col-span-3">
-        <p class="text-gray-400 dark:text-gray-500">
-          <a href="#" class="hover:text-black dark:hover:text-white">GitHub</a><br>
-          <a href="#" class="hover:text-black dark:hover:text-white">LinkedIn</a>
-        </p>
-      </div>
-      <div class="col-span-6">
-        <p class="text-gray-400 dark:text-gray-500">
-          20139 Milano, Italy<br>
-          mail coming soon
-        </p>
-      </div>
-    </div>
-  </footer>
-  <script>
-  // create a function to update the date and time
-  function updateDateTime() {
-    // create a new `Date` object
-    const now = new Date();
 
-    // get the current date and time as a string
-    const currentDateTime = now.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit',second:'2-digit'});
+    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+    <script>
+        // Function to update the current time in the span element
+        function updateCurrentTime() {
+            // Create a new Date object
+            var now = new Date();
 
-    // update the `textContent` property of the `span` element with the `id` of `datetime`
-    document.querySelector('#datetime').textContent = currentDateTime;
-  }
+            // Get the current hour, minute, and second
+            var hour = now.getHours();
+            var minute = now.getMinutes();
+            var second = now.getSeconds();
 
-  // call the `updateDateTime` function every second
-  setInterval(updateDateTime, 1000);
-  </script>
+            // Format the time as HH:MM:SS
+            var currentTimeString = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}:${second.toString().padStart(2, '0')}`;
+
+            // Get the span element by its id
+            var currentTimeSpan = document.getElementById("currentTime");
+
+            // Update the content of the span element with the current time
+            currentTimeSpan.textContent = currentTimeString;
+        }
+
+        // Call the updateCurrentTime function initially to display the current time
+        updateCurrentTime();
+        // Update the current time every second
+        setInterval(updateCurrentTime, 1000);
+    </script>
 </body>
 </html>
